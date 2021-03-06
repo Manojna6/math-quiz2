@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <center>
+            
+            <h1 style="color: rgb(0, 0, 0)">Math Quiz!</h1>
+            <h3 id="questiontrn">Question Turn -</h2>
+            <h3 id="answertrn">Answer Turn -</h2>
+            <hr>
+            <h4 style="color: rgb(0, 0, 0)">Score</h4>
+            <h4 id="player1_score">0</h4>
+            <h4 id="player2_score">0</h4>
+            <hr>
+
+            <div id="output">
+                <h2>What is:</h2>
+                <h3 id="problem"></h3>
+                <input placeholder="Answer" id="answer">
+                <button id="check" onclick = "check()">Check</button>
+                <h4 id="doubt"></h4>
+            </div>
+            <br>
+
+            <div id="numdiv">
+                <h4>First Number</h4>
+                <input id="num1"><br><br>
+                <h4>Second Number</h4>
+                <input id="num2"><br><br>
+                <button id="send" onclick="send()">Send</button>
+            </div>
+        </center>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

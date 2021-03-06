@@ -1,0 +1,48 @@
+body{
+    background-image: url("Abstractbk.jpg");
+    background-size: cover;
+    text-align: center;
+}
+#login_div{
+    background-color: white;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-left: 35%;
+    margin-top: 15%;
+}
+#play{
+    margin-top: 10px;
+}
+#login-title{
+    font-family:monospace;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 40px;
+}
+h2{
+    font-family: monospace;
+    font-weight: 100;
+}
+#output{
+    border-radius: 20px;
+    background-color: white;
+    border-top: 10px solid rgb(27, 187, 199);
+    display:none;
+}
+#check{
+    background-color: rgb(27, 187, 199);
+    border-radius: 20px;
+    padding: 3px;
+    margin: 5px;
+}
+#numdiv{
+    border: white;
+    border-style: dashed;
+}
+#send{
+    background-color: rgb(27, 187, 199);
+    border-radius: 10px;
+}
+
+
