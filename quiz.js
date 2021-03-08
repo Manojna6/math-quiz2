@@ -8,6 +8,8 @@ var turn = 0;
 
 document.getElementById("questiontrn").innerHTML = "Question Turn - " + Player1; 
 document.getElementById("answertrn").innerHTML = "Answer Turn - " + Player2; 
+document.getElementById("player1_score").innerHTML = Player1 + " = 0";
+document.getElementById("player2_score").innerHTML = Player2 + " = 0";
 
 function send(){
     number1 = document.getElementById("num1").value;
@@ -15,9 +17,12 @@ function send(){
     actual_answer = parseInt(number1) * parseInt(number2);
     document.getElementById("problem").innerHTML = number1 + " X " + number2;
     document.getElementById("output").style.display = "block";
+    document.getElementById("num1").value = "";
+    document.getElementById("num2").value = "";
 };
 function check(){
     answer_input = document.getElementById("answer").value;
+    document.getElementById("answer").value = "";
     if(answer_input == actual_answer){
         console.log(answer_input);
         document.getElementById("doubt").innerHTML = "Correct! The answer is: " + actual_answer;
